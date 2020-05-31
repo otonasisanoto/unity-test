@@ -1,2 +1,3 @@
 # unity-test
- This is test.
+UnityでiOS向けゲームを制作する方法を理解するためのプロジェクト。
+様々なコードの実験を行う。
