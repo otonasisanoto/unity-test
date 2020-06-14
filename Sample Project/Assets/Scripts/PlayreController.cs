@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayreController : MonoBehaviour
 {
@@ -8,9 +9,26 @@ public class PlayreController : MonoBehaviour
     public float speed;
     private Rigidbody rb;
 
+    public Text pointCountText;
+    private int pointCount;
+
+    public Text gameoverText;
+    public Text gameclearText;
+
+    private int pointMax;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
+        pointCount = 0;
+        SetPointCountText();
+
+        gameoverText.gameObject.SetActive(false);
+
+        gameclearText.gameObject.SetActive(false);
+
+        pointMax = GameObject.Find("Points").transform.childCount; // アイテム数を取得
     }
 
     // Update()はフレーム毎の処理
@@ -30,9 +48,31 @@ public class PlayreController : MonoBehaviour
     // オブジェクト衝突時の処理
     void OnTriggerEnter(Collider other)
     {
+        // ポイント獲得時
         if (other.gameObject.CompareTag("Point"))
         {
             other.gameObject.SetActive(false);
+            pointCount++;
+            SetPointCountText();
+
+            // ゲームクリア時
+            if(pointCount >= pointMax)
+            {
+                gameclearText.gameObject.SetActive(true);
+                Time.timeScale = 0; // ゲームの停止(Update関数内など止まらないところもある)
+            }
         }
+
+        // ゲームオーバー時
+        if(other.gameObject.CompareTag("Gameover"))
+        {
+            gameoverText.gameObject.SetActive(true);
+            Time.timeScale = 0; // ゲームの停止(Update関数内など止まらないところもある)
+        }
+    }
+
+    void SetPointCountText()
+    {
+        pointCountText.text = "PointCount : " + pointCount.ToString();
     }
 }

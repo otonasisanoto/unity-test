@@ -16,8 +16,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Stage01.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -49,22 +50,26 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11176}
+      Script: {instanceID: 11154}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 11310}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11350}
     - Class: 114
-      Script: {instanceID: 11760}
+      Script: {instanceID: 11734}
     - Class: 114
-      Script: {instanceID: 12430}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 12622}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12974}
+      Script: {instanceID: 12600}
     - Class: 114
-      Script: {instanceID: 14496}
+      Script: {instanceID: 12618}
+    - Class: 114
+      Script: {instanceID: 12954}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -203,18 +208,6 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 9e27f44bbf48228f203a37254d40f8ae
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: JoystickSetterExample
-  - hash:
-      serializedVersion: 2
-      Hash: b361bd0785f8339e263ca3775432a086
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayreController
-  - hash:
-      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -347,6 +340,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 2379eb58acf6730101cb75971ce106e6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayreController
+  - hash:
+      serializedVersion: 2
       Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -389,12 +388,6 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 824e8d4cb47ffd88ddf959dbd4526585
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DynamicJoystick
-  - hash:
-      serializedVersion: 2
       Hash: ce669872a2be11bc686ea22961d8a3bb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -425,10 +418,10 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 528e9858840cb8370d93939fff6b42d9
+      Hash: 83e769eee07fc231384c812eedbb8224
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: JoystickPlayerExample
+    className: CameraController
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -551,11 +544,23 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 83e769eee07fc231384c812eedbb8224
+      Hash: 9e27f44bbf48228f203a37254d40f8ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: CameraController
+    className: JoystickSetterExample
+  - hash:
+      serializedVersion: 2
+      Hash: 824e8d4cb47ffd88ddf959dbd4526585
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DynamicJoystick
+  - hash:
+      serializedVersion: 2
+      Hash: 528e9858840cb8370d93939fff6b42d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JoystickPlayerExample
   platform: 9
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/Stage01.unity
   playerPath: /Users/shimabukuromanari/Desktop/Test
